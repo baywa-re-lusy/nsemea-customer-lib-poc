@@ -15,7 +15,7 @@ import {
   SubListFieldTypeDecorator,
   SubListSubRecordDecorator
 } from '../Core/DataAccess/NSSubList';
-import { AddressBase } from  '../Core/DataAccess/AddressBase';
+import { Address } from  './Address';
 import { NSSubListLine } from '../Core/DataAccess/NSSubListLine';
 
 /**
@@ -24,8 +24,8 @@ import { NSSubListLine } from '../Core/DataAccess/NSSubListLine';
  */
 export class AddressSublist extends NSSubListLine {
 
-  @SubListSubRecordDecorator(AddressBase)
-  accessor addressbookaddress: AddressBase;
+  @SubListSubRecordDecorator(Address)
+  accessor addressbookaddress: Address;
 
   @SubListFieldTypeDecorator()
   accessor attention: string
