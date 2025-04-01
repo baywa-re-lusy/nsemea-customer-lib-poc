@@ -4,11 +4,11 @@ import * as log from 'N/log';
 // import Swal from 'sweetalert2';
 
 export class CustomerService {
-  displayAlert() {
-    log.debug({ title: 'CustomerService', details:'displayAlert' });
+  displayAlert(title: string, message: string) {
+    log.debug('CustomerService', 'displayAlert');
     // Swal.fire({
-    //   title: '123 title',
-    //   text: '123 message',
+    //   title: title,
+    //   text: message,
     //   icon: "success"
     // });
   }
