@@ -3,23 +3,22 @@ const fs = require('fs');
 const path = require('path');
 
 let source = path.join(process.cwd(),"src/Typescripts/Entities");
-let destination = '../../src/Typescripts/Entities';
+let destination = '../../src/Typescripts/nsemea_lib/Entities';
 console.log(`copying NSEMEA purchase library from ${source} to ${destination}`);
 fsExtra.copy(source,destination,{ preserveTimestamps:true}, err => {
   console.error(err);
 });
 
 source = path.join(process.cwd(),"src/Typescripts/Services");
-destination = '../../src/Typescripts/Services';
-console.log(`copying NSEMEA purchase library from ${source} to ${destination}`);
+destination = '../../src/Typescripts/nsemea_lib/Services';
+console.log(`copying NSEMEA customer library from ${source} to ${destination}`);
 fsExtra.copy(source,destination,{ preserveTimestamps:true}, err => {
   console.error(err);
 });
 
-/*
 console.log(`path : ${__dirname}`);
 const gitignorePath = path.resolve(__dirname, '../../.gitignore');
-const entriesToAdd = ['src/Typescripts/Entities', 'src/Typescripts/Services'];
+const entriesToAdd = ['src/Typescripts/nsemea_lib'];
 
 console.log(`gitignorePath ${gitignorePath}`);
 
@@ -45,4 +44,3 @@ fs.readFile(gitignorePath, 'utf8', (err, data) => {
     console.log('.gitignore file already contains the specified entries.');
   }
 });
- */
