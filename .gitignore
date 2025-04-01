@@ -4,7 +4,5 @@ yarn-error.log
 dist
 node_modules
 **/.DS_Store
-src/Typescripts/Core
 tests/__mock__/N
-src/Typescripts/Entities/Address.ts
-src/Typescripts/Entities/AddressService.ts
+src/Typescripts/nsemea_lib

@@ -19,7 +19,8 @@
     "baseUrl": ".",
     "lib":["ES2019"],
     "paths": {
-      "N/*": ["node_modules/@hitc/netsuite-types/N/*"]
+      "N/*": ["node_modules/@hitc/netsuite-types/N/*"],
+      "@nsemea_lib/*" : ["src/Typescripts/nsemea_lib/*"]
     },
     "outDir": "dist"
   },

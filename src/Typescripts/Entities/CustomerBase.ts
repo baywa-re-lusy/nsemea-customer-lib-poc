@@ -3,20 +3,20 @@
  */
 
 import * as record from 'N/record';
-import { EntityBase } from '../Core/DataAccess/EntityBase'
+import { EntityBase } from '@nsemea_lib/Core/DataAccess/EntityBase'
 import {
   FieldTypeDecorator,
   Nullable,
   SubListDecorator,
   SubRecordDecorator,
-} from '../Core/DataAccess/NSTypedRecord';
+} from '@nsemea_lib/Core/DataAccess/NSTypedRecord';
 import {
   NSSubList,
   SubListFieldTypeDecorator,
   SubListSubRecordDecorator
-} from '../Core/DataAccess/NSSubList';
-import { Address } from  './Address';
-import { NSSubListLine } from '../Core/DataAccess/NSSubListLine';
+} from '@nsemea_lib/Core/DataAccess/NSSubList';
+import { Address } from  '@nsemea_lib/Entities/Address';
+import { NSSubListLine } from '@nsemea_lib/Core/DataAccess/NSSubListLine';
 
 /**
  * The address _sublist_ on customer records, not to be confused with the Address _subrecord_.
