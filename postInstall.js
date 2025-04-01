@@ -17,7 +17,7 @@ fsExtra.copy(source,destination,{ preserveTimestamps:true}, err => {
 });
 
 console.log(`path : ${__dirname}`);
-const gitignorePath = path.resolve(__dirname, '../../.gitignore');
+const gitignorePath = path.join(__dirname, '.gitignore');
 const entriesToAdd = ['src/Typescripts/nsemea_lib'];
 
 console.log(`gitignorePath ${gitignorePath}`);
