@@ -4,10 +4,10 @@ import * as log from 'N/log';
 import Swal from 'sweetalert2';
 
 export class CustomerService {
-  displayAlert(title: string, message: string) {
+  displayAlert() {
     Swal.fire({
-      title: title,
-      text: message,
+      title: '123 title',
+      text: '123 message',
       icon: "success"
     });
   }
