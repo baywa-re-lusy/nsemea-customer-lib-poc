@@ -17,7 +17,7 @@
     "noImplicitOverride": true,
     "downlevelIteration": false,
     "baseUrl": ".",
-    "lib":["ES2019"],
+    "lib":["ES2019","dom"],
     "paths": {
       "N/*": ["node_modules/@hitc/netsuite-types/N/*"],
       "@nsemea_lib/*" : ["src/Typescripts/nsemea_lib/*"]

@@ -1,7 +1,6 @@
+import Swal from "sweetalert2";
 import {Customer} from "../Entities/Customer";
 import * as log from 'N/log';
-
-import Swal from 'sweetalert2';
 
 export class CustomerService {
   displayAlert(title: string, message: string) {
